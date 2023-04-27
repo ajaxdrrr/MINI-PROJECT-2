@@ -94,7 +94,6 @@ function loggedInState() {
     }
     
 }
-categFilter();
 locFilter();
 createJobCards();
 loggedInState();
@@ -256,6 +255,9 @@ create.onclick = e => {
       }
       resSpan2.innerHTML = msg2.join("<br>");
     
+    
+
+
 }
 
 username.onkeyup = () => {
@@ -310,7 +312,7 @@ function authenticateCredentials() {
 
         } else {
 
-            let foundMatch = false; 
+            let foundMatch = false; // flag to keep track if match is found
             for (let i = 0; i < credentialStore.length; i++) {
                 if (username.value === credentialStore[i].email && userpass.value === credentialStore[i].password) {
                     
@@ -419,6 +421,17 @@ fetch('../../payloads/user.JSON').then(response => response.json()).then(data =>
     });
 
     if (!matchFound) {
+
+    //   userpass.style.border = err_border;
+    //   username.style.border = err_border;
+
+    //   resSpan.classList.toggle('error');
+
+    //   msg.push("Credentials doesn't match our record");
+
+    //   resSpan.innerHTML = msg;
+
+    //   msg.pop();
 
         authenticateCredentials();
 
@@ -574,6 +587,10 @@ function createJobCards() {
             browseBtn.classList.add("btn-outline-success");
             browseBtn.innerHTML = "Browse Job";
 
+            // jobType.classList.add("");
+            // jobType.classList.add("");
+            // jobType.classList.add("");
+
 
             jobType.innerHTML = `${job.type}`;
 
@@ -604,31 +621,5 @@ function locFilter() {
 
 }
 
-function categFilter() {
 
-    fetch('../../payloads/jobs.JSON').then(response => response.json()).then(data => {
-
-        let z = false;
-
-        data.jobs.forEach(jobz => {
-
-            let categ = document.querySelector('#categFilter');
-            let options = document.createElement('option');
-
-            categ.appendChild(options);
-
-            options.value = `${jobz.category}`;
-            options.innerHTML = `${jobz.category}`;
-
-            if (`${jobz.category}` === "IT") {
-
-                z = true;
-                return false;
-            }
-
-        });
-    
-    }).catch(error => console.error(error));
-
-}
 
