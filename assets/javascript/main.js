@@ -372,7 +372,7 @@ function authenticateCredentials() {
 
 function scanPayload() {
 
-fetch('../payloads/user.JSON').then(response => response.json()).then(data => {
+fetch("../../payloads/user.JSON").then(response => response.json()).then(data => {
 
     let matchFound = false;
     data.users.forEach(user => {
@@ -465,45 +465,11 @@ function destroySession() {
     logoutModal.classList.add("show");
 
 }
-//sliders
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".next-btn");
-const prevBtn = document.querySelector(".prev-btn");
-
-let index = 0;
-display(index);
-
-function display(index) {
-  slides.forEach((slide) => {
-    slide.classList.remove("active");
-  });
-
-  slides[index].classList.add("active");
-}
-
-function next() {
-  index++;
-  if (index > slides.length - 1) {
-    index = 0;
-  }
-  display(index);
-}
-
-function prev() {
-  index--;
-  if (index < 0) {
-    index = slides.length - 1;
-  }
-  display(index);
-}
-
-nextBtn.addEventListener("click", next);
-prevBtn.addEventListener("click", prev);
 
 
 function createJobCards() {
 
-    fetch('../payloads/jobs.JSON').then(response => response.json()).then(data => {
+    fetch("../../payloads/jobs.JSON").then(response => response.json()).then(data => {
 
         data.jobs.forEach(job => {
 
