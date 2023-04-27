@@ -421,17 +421,6 @@ fetch("../../payloads/user.JSON").then(response => response.json()).then(data =>
 
     if (!matchFound) {
 
-    //   userpass.style.border = err_border;
-    //   username.style.border = err_border;
-
-    //   resSpan.classList.toggle('error');
-
-    //   msg.push("Credentials doesn't match our record");
-
-    //   resSpan.innerHTML = msg;
-
-    //   msg.pop();
-
         authenticateCredentials();
 
     }
@@ -552,17 +541,13 @@ function createJobCards() {
             browseBtn.classList.add("btn-outline-success");
             browseBtn.innerHTML = "Browse Job";
 
-            // jobType.classList.add("");
-            // jobType.classList.add("");
-            // jobType.classList.add("");
-
 
             jobType.innerHTML = `${job.type}`;
 
     
         });
     
-    }).catch(error => console.error(error));
+    }).catch(errno => console.error(errno));
 
 }
 
