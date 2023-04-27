@@ -458,7 +458,7 @@ function destroySession() {
 
 function createJobCards() {
 
-    fetch("../../payloads/jobs.JSON").then(response => response.json()).then(data => {
+    fetch("https://drive.google.com/file/d/18_OeW_eocWLZCcffcJliQIS5XGNTqOfn/view?usp=sharing").then(response => response.json()).then(data => {
 
         data.jobs.forEach(job => {
 
