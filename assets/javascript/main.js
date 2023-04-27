@@ -94,7 +94,6 @@ function loggedInState() {
     }
     
 }
-locFilter();
 createJobCards();
 loggedInState();
 
@@ -373,7 +372,7 @@ function authenticateCredentials() {
 
 function scanPayload() {
 
-fetch('../../payloads/user.JSON').then(response => response.json()).then(data => {
+fetch('../payloads/user.JSON').then(response => response.json()).then(data => {
 
     let matchFound = false;
     data.users.forEach(user => {
@@ -504,7 +503,7 @@ prevBtn.addEventListener("click", prev);
 
 function createJobCards() {
 
-    fetch('../../payloads/jobs.JSON').then(response => response.json()).then(data => {
+    fetch('../payloads/jobs.JSON').then(response => response.json()).then(data => {
 
         data.jobs.forEach(job => {
 
@@ -600,26 +599,5 @@ function createJobCards() {
     }).catch(error => console.error(error));
 
 }
-
-function locFilter() {
-
-    fetch('../../payloads/jobs.JSON').then(response => response.json()).then(data => {
-
-        data.jobs.forEach(jobz => {
-
-            let locationFilter = document.querySelector('#locationFilter');
-            let options = document.createElement('option');
-
-            locationFilter.appendChild(options);
-
-            options.value = `${jobz.address}`;
-            options.innerHTML = `${jobz.address}`;
-    
-        });
-    
-    }).catch(error => console.error(error));
-
-}
-
 
 
