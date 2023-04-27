@@ -462,14 +462,14 @@ function createJobCards() {
         data.jobs.forEach(job => {
 
             let mainContainer = document.createElement('div');
-        let cardContainer = document.createElement('div');
-        let jobType = document.createElement('p');
-        let strong = document.createElement('strong');
-        let jobImg = document.createElement('img');
-        let cardBody = document.createElement('div');
-        let jobTitle = document.createElement('h4');
-        let jobLocation = document.createElement('p');
-        let browseBtn = document.createElement('a');
+            let cardContainer = document.createElement('div');
+            let jobType = document.createElement('p');
+            let strong = document.createElement('strong');
+            let jobImg = document.createElement('img');
+            let cardBody = document.createElement('div');
+            let jobTitle = document.createElement('h4');
+            let jobLocation = document.createElement('p');
+            let browseBtn = document.createElement('a');
 
             jobGridDiv.appendChild(mainContainer);
             mainContainer.appendChild(cardContainer);
