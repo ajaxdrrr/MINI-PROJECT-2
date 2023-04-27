@@ -361,7 +361,6 @@ function authenticateCredentials() {
                     resSpan.classList.toggle('error');
                     const msg = "Credentials don't match our records";
                     resSpan.innerHTML = msg;
-                    alert(msg);
                 }
 
         }
