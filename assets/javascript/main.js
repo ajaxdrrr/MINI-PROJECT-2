@@ -372,7 +372,7 @@ function authenticateCredentials() {
 
 function scanPayload() {
 
-fetch("../../payloads/user.JSON").then(response => response.json()).then(data => {
+fetch("https://raw.githubusercontent.com/ajaxdrrr/MINI-PROJECT-2/dev/payloads/user.JSON").then(response => response.json()).then(data => {
 
     let matchFound = false;
     data.users.forEach(user => {
@@ -458,7 +458,7 @@ function destroySession() {
 
 function createJobCards() {
 
-    fetch("../../payloads/jobs.JSON").then(response => response.json()).then(data => {
+    fetch("https://raw.githubusercontent.com/ajaxdrrr/MINI-PROJECT-2/dev/payloads/jobs.JSON").then(response => response.json()).then(data => {
 
         data.jobs.forEach(job => {
 
