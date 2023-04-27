@@ -116,13 +116,13 @@ closeBtn2.onclick = () => {
   registerModal.classList.remove("show");
 }
 
-// getstarted1.onclick = () => {
-//     loginModal.classList.add("show");
-// }
+getstarted1.onclick = () => {
+    loginModal.classList.add("show");
+}
 
-// getstarted2.onclick = () => {
-//     loginModal.classList.add("show");
-// }
+getstarted2.onclick = () => {
+    loginModal.classList.add("show");
+}
 
 registerShow.onclick = () => {
     registerModal.classList.add("show");
