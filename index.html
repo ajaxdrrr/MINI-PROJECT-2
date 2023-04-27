@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bdf11bb7b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <script defer src="assets/javascript/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>CareerHub | Explore job opportunities near you.</title>
+</head>
+<body>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="brand" src="./assets/images/brand.png" alt="Your Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  text-center">
+                    <a class="nav-link top-items" href="jobs.html">Find job</a>
+                </li>
+                <li class="nav-item active text-center">
+                    <a class="nav-link top-items" href="about.html">About</a>
+                </li>
+                <li class="nav-item  text-center">
+                    <a class="nav-link top-items" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item text-center zx d-none" id="show">
+                    <div class="dropdown row ml-1">
+                        <img class="card-img-top rounded-circle img-fluid bg-success userz ml-1" role="button" id="accountDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="assets/images/team-photo3 edited size.png" alt="Developer Image">
+                        <span class="text-inline m-auto"><strong class="ml-2" id="userlogged"></strong></span>
+                        <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" id="logoutz">Logout</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item text-center" id="begone">
+                    <!-- <a class="nav-link top-items" id="register">Signup</a> -->
+                    <button type="button" class="btn btn-success" id="register-btn">
+                        Register
+                      </button>
+                </li>
+                <li class="nav-item text-center" id="begone">
+                    <!-- <a class="nav-link top-items" id="login">Signin</a> -->
+                    <button class="btn btn-outline-success m-2" id="login-btn">Sign In</button>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- modal login start -->
+    <div id="login-modal" class="modal card">
+        <div class="modal-content text-center card">
+            <span class="close text-right">&times;</span>
+            <div class="col-lg-12">
+            <img class="brand mb-3" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-lg-12">
+            <p>Login to your CareerHub account</p>
+            </div>
+            <div class="col-lg-12 mb-2">
+            <span id="msg" class="success"></span>
+            </div>
+            <form method="#" action="#">
+
+            <div class="col-lg-12 mb-3">
+                <input type="text" class="form form-control" id="useremail" name="username" placeholder="Email Address">
+            </div>
+            <div class="col-lg-12 mb-3">
+                <input type="password" class="form form-control" id="userpass" name="password" placeholder="Password">
+            </div>
+            <div class="col-lg-12 mb-2 text-left">
+                <input type="checkbox" class="" id="reme" name="reme" value="Remember me">
+                <label for="reme">Remember me</label>
+            </div>
+            <div class="col-lg-12 mb-2">
+                <button id="login" class="btn btn-success w-100" >Login</button>
+            </div>
+            <div class="col-lg-12">
+                <p>Don't have an account yet? <a class="signupmodal" id="registerShow">Sign Up</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- modal login end -->
+
+    <!-- modal login start -->
+    <div id="logout-modal" class="modal card">
+        <div class="modal-content text-center card">
+            <span class="close text-right">&times;</span>
+            <div class="col-lg-12">
+            <img class="brand mb-3" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-lg-12">
+            <p>Logout successfully.</p>
+            </div>
+            <div class="col-lg-12 mb-2">
+            <span id="msg" class="success"></span>
+            </div>
+            
+        </div>
+    </div>
+    <!-- modal login end -->
+
+    <!-- modal register start -->
+
+    <div id="register-modal" class="modal card">
+        <div class="modal-content text-center card">
+            <span class="close text-right">&times;</span>
+            <div class="col-lg-12">
+            <img class="brand mb-3" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-lg-12">
+            <p>Create CareerHub account</p>
+            </div>
+            <div class="col-lg-12 mb-2">
+            <span id="msg2" class="success"></span>
+            </div>
+            <form method="#" action="#">
+
+                <div class="col-lg-12 mb-3">
+                    <input type="text" class="form form-control" id="firstname" name="firstname" placeholder="First Name">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="text" class="form form-control" id="lastname" name="lastname" placeholder="Last Name">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="text" class="form form-control" id="useremail" name="username" placeholder="Email Address">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="password" class="form form-control" id="userpass" name="password" placeholder="Password">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="password" class="form form-control" id="userpass" name="password" placeholder="Confirm Password">
+                </div>
+                <div class="col-lg-12 mb-2 text-left">
+                    <input type="checkbox" class="" id="reme2" name="reme" value="Remember me">
+                    <label for="reme">Remember me</label>
+                </div>
+                <div class="col-lg-12 mb-2">
+                    <button id="create" class="btn btn-success w-100" >Create Account</button>
+                </div>
+                <div class="col-lg-12">
+                    <p>Registered already? <a class="signupmodal" id="loginShow">Sign In</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- modal register end -->
+
+    <!-- Header -->
+    <section>
+
+        <div class="landing-hero d-flex align-item-center justify-content-center flex-column">
+
+            <div class="container d-flex align-item-center justify-content-center mb-5 flex-lg">
+
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-secondary">The Easiest Way to Get Your New Job</h1>
+                    <h5 class="text-secondary">Discover job opportunities that offer more than just a paycheck</h4>
+                </div>
+                
+
+            </div>
+
+            <div class="container d-flex align-item-center justify-content-center flex-lg-row">
+
+                <div class="col-lg-4">
+                    <input type="text" class="form form-control" placeholder="e.g Full Stack Developer">
+                </div>
+                <div class="col-lg-4">
+                    <select type="text" class="form form-control" id="categFilter">
+
+                        <option value="" disabled selected>All Category</option>
+    
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <select type="text" class="form form-control" id="locationFilter">
+
+                        <option value="" disabled selected>All Location</option>
+    
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="container d-flex align-item-center justify-content-center">
+
+                <div class="col-lg-12 mt-4">
+                    <button class="btn btn-outline-success w-100">Filter</button>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </section>
+    <!-- End of Header -->
+
+    <!-- Section 1 -->
+    <section>
+
+        <div class="d-flex flex-column align-items-center bg-light p-5">
+
+            <div class="section-title text-secondary text-center">
+
+                <h1>Companies We've Helped</h1>
+                <h4>Some of the companies we've helped recruit excellent applicants over the years.</h4>
+
+            </div>
+
+            <div class="container-fluid align-item-center d-flex flex-wrap gap-5  justify-content-center">
+
+                <img src="assets/images/company/acce.svg" class="company-size" alt="">
+                <img src="assets/images/company/ms.svg" class="company-size" alt="">
+                <img src="assets/images/company/ora.svg" class="company-size" alt="">
+                <img src="assets/images/company/dxc.svg" class="company-size" alt="">
+                <img src="assets/images/company/ibm.svg" class="company-size" alt="">
+                <img src="assets/images/company/sap.svg" class="company-size" alt="">
+                <img src="assets/images/company/cog.svg" class="company-size" alt="">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+
+        <div class="landing-second-hero d-flex justify-content-center align-item-center ">
+            <div class="bg-mask">
+    
+            </div>
+            <div class="container d-flex justify-content-end align-items-end m-auto flex-column ">
+                
+                <div class="col-lg-6">
+
+                    <h3 class="text-light"><strong>Make Recruiting Your Competitive Advantage</strong></h3>
+
+                </div>
+                
+                <div class="col-lg-6">
+                    
+                    <h5 class="text-light lead-text">Talent is a top priority for all startup founders and executives. CareerHub offers a way to completely optimize your entire recruiting process. Find better candidates, conduct more focused interviews, and make data-driven hiring decisions.</h5>
+
+                </div>
+                <div class="col-lg-6">
+                    
+                    <button class="btn btn-outline-light w-75" id="get-started2">Get Started</button>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class=" bg-light">
+       <div class="container d-flex flex-column ">
+            <div class="col-lg-12 text-center p-5">
+                <h2 class="text-secondary">Hundreds of Jobs From All Over the Globe</h2>
+                <h4 class="text-secondary">Exploring the Diversity of Employment Opportunities Worldwide</h4>
+            </div>
+            
+            <div class="d-flex align-item-center justify-content-center flex-row ">
+
+                <div class="container-fluid my-5">
+                    <div class="row">
+                        <div class="col-12 m-auto">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item mb-4">
+                                    <div class="card p-3 text-center mb-3">
+                                        <p class="card-text text-right text-success "><strong class="border border-success p-2">Full-time</strong></p>
+                                        <img class="card-img-top img-fluid company-size" src="assets/images/company/acce.svg" alt="Developer Image">
+                                        <div class="card-body">
+                                        <h4 class="card-title text-center">Full Stack Developer</h4>
+                                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i>1628 2nd Ave New York</p>
+                                        <a href="#" class="btn btn-outline-success">Browse Job</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="item">
+                                    <div class="card p-3 text-center mb-3">
+                                        <p class="card-text text-right text-primary "><strong class="border border-primary p-2">Internship</strong></p>
+                                        <img class="card-img-top img-fluid company-size" src="assets/images/company/ibm.svg" alt="Developer Image">
+                                        <div class="card-body">
+                                        <h4 class="card-title text-center">Full Stack Developer</h4>
+                                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i>1628 2nd Ave New York</p>
+                                        <a href="#" class="btn btn-outline-success">Browse Job</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card p-3 text-center mb-3">
+                                        <p class="card-text text-right text-success "><strong class="border border-success p-2">Full-time</strong></p>
+                                        <img class="card-img-top img-fluid company-size" src="assets/images/company/ms.svg" alt="Developer Image">
+                                        <div class="card-body">
+                                        <h4 class="card-title text-center">Full Stack Developer</h4>
+                                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i>1628 2nd Ave New York</p>
+                                        <a href="#" class="btn btn-outline-success">Browse Job</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card p-3 text-center mb-3">
+                                        <p class="card-text text-right text-success "><strong class="border border-success p-2">Full-time</strong></p>
+                                        <img class="card-img-top img-fluid company-size" src="assets/images/company/sap.svg" alt="Developer Image">
+                                        <div class="card-body">
+                                        <h4 class="card-title text-center">Full Stack Developer</h4>
+                                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i>1628 2nd Ave New York</p>
+                                        <a href="#" class="btn btn-outline-success">Browse Job</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card p-3 text-center mb-3">
+                                        <p class="card-text text-right text-danger "><strong class="border border-danger p-2">Part-time</strong></p>
+                                        <img class="card-img-top img-fluid company-size" src="assets/images/company/ora.svg" alt="Developer Image">
+                                        <div class="card-body">
+                                        <h4 class="card-title text-center">Full Stack Developer</h4>
+                                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i>1628 2nd Ave New York</p>
+                                        <a href="#" class="btn btn-outline-success">Browse Job</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card p-3 text-center mb-3">
+                                        <p class="card-text text-right text-success "><strong class="border border-success p-2">Full-time</strong></p>
+                                        <img class="card-img-top img-fluid company-size" src="assets/images/company/dxc.svg" alt="Developer Image">
+                                        <div class="card-body">
+                                        <h4 class="card-title text-center">Full Stack Developer</h4>
+                                        <p class="card-text"><i class="bi bi-geo-alt-fill"></i>1628 2nd Ave New York</p>
+                                        <a href="#" class="btn btn-outline-success">Browse Job</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+              
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    <section>
+
+        <div class="landing-third-hero d-flex justify-content-center align-item-center ">
+            <div class="bg-mask">
+    
+            </div>
+            <div class="container d-flex justify-content-start align-items-start m-auto flex-column ">
+                
+                <div class="col-lg-6">
+
+                    <h3 class="text-light"><strong>Join Thousands of Companies That Rely on CareerHub</strong></h3>
+
+                </div>
+                
+                <div class="col-lg-6">
+                    
+                    <h5 class="text-light lead-text">CareerHub offers a way to completely optimize your entire recruiting process. Find better candidates, conduct more focused interviews, and make data-driven hiring decisions.</h5>
+
+                </div>
+                <div class="col-lg-6">
+                    
+                    <button class="btn btn-outline-light w-75" id="get-started1">Get Started</button>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter section-padding p-5 bg-light">
+        <div class="container">
+          <form action="" class="m-auto">
+            <div class="row">
+              <div class="col-md-12 text-center p-5">
+                  <h1>Subscribe to <span class="text-career">Our</span> Newsletter!</h1>
+                  <p>To keep track of latest updates and news about our website, please subscribe to our newsletter.</p>
+              </div>
+              <div class="col-md-6 col-lg-6 input-group mb-3 container-fluid">
+                <input type="email" class="form-control" placeholder="Email address" aria-label="Enter email address" aria-describedby="newsletter-btn">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-success" type="button" id="newsletter-btn">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+    </section>
+    <!-- End of Newsletter -->
+
+    <!-- Queries Section -->
+    <section id="queries" class="queries section-padding">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center p-5">
+                  <h1>Got Queries? Message <span class="text-success">Us!</span></h1>
+                  <p>As professionals, we are eager to work with you. We value your passion and integrity to your craft.</p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12 ps-lg-5 mt-md-5 ">
+                  <img src="assets/images/shake hands.jpg" alt="shake" class="img-fluid margs">
+              </div>
+              <div class="col-lg-6 col-md-12 col-12">
+                  <form action="#" class=" p-4 m-auto">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="mb-3">
+                                  <input type="text" class="form-control" required placeholder="Your Name Here">
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" required placeholder="Your Email Here">
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="mb-3">
+                                <textarea required class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center mb-3">
+                            <p class="hidden"><input type="checkbox"> By clicking Subscribe you are aware of and agree to the user rights in the processing of personal data as outlined in the <b class="text-primary">Privacy Policy</b> and <b class="text-primary">Term of Use</b> of Cheaptalks.</p>
+                          </div>
+                          <div class="col-md-12 text-center mb-3">
+                            <button class="btn btn-success w-100 btn-md mt-2">Send</button>
+                          </div>
+                      </div>
+                    </form>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Queries -->
+
+    <!-- footer start -->
+    <footer class="bg-light py-3 text-center text-md-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <img class="brand" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-md-6 text-md-right">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="btm-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="btm-link">Terms &amp; Conditions</a></li>
+                <li class="list-inline-item"><a href="#" class="btm-link">Cookie Policy</a></li>
+              </ul>
+              <p class="mb-0">&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

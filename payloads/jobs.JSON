@@ -1,0 +1,139 @@
+{
+    "jobs": [
+      {
+        "position" : "Quality Assurance Tester",
+        "description" : "Quality assurance testers are technicians or engineers who check software products to see if they're up to industry standards and free of any issues. This role is common for gaming systems, mobile applications and other technology that needs further testing and maintenance when recommended.",
+        "salary" : "0",
+        "type" : "Internship",
+        "img" : "assets/images/company/ms.svg",
+        "address" : "Japan",
+        "category" : "IT"
+      },
+      {
+        "position" : "UI|UX Designer",
+        "description" : "A user experience (UX) designer is involved with all facets of product development regarding its purchasing, branding, usability and functionality. They collect and review user feedback to determine what a product needs to be efficient, functional and successful. They apply this feedback to the design, organization and usability. These professionals then monitor the process of testing and revising products until they meet their consumers' high-quality standards.",
+        "salary" : "0",
+        "type" : "Part-Time",
+        "img" : "assets/images/company/ms.svg",
+        "address" : "Korea",
+        "category" : "IT"
+      },
+      {
+        "position" : "Full Stack Developer",
+        "description" : "Web developers design the appearance, navigation and content organization of a website. They use coding languages such as HTML, CSS and JavaScript to manage graphics, applications and content that address a client's needs.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/ibm.svg",
+        "address" : "Germany",
+        "category" : "IT"
+      },
+      {
+        "position" : "Database Administrator",
+        "description" : "Database administrators employ specialized software to organize and keep track of data. The software can be associated with software configuration, security and performance when applicable. These professionals frequently diagnose and solve complex IT issues related to the data infrastructure to ensure an organization's data is safe, accessible and easy to navigate.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/ora.svg",
+        "address" : "China",
+        "category" : "IT"
+      },
+      {
+        "position" : "IT Security Specialist",
+        "description" : "IT security specialists work in various industries to build and maintain digital protective measures on intellectual property and data that belong to an organization. They help companies create contingency plans in case information gets hacked from their networks and servers. These professionals also create strategies to troubleshoot problems as they arise.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/ora.svg",
+        "address" : "Canada",
+        "category" : "IT"
+      },
+      {
+        "position" : "Computer Programmer",
+        "description" : "A computer programmer is someone who writes new computer software using coding languages like HTML, JavaScript and CSS. Video game software can be updated to improve online gameplay, which is an opportunity for programmers to troubleshoot problems experienced by gamers after the game is released to the general public.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/ora.svg",
+        "address" : "India",
+        "category" : "IT"
+      },
+      {
+        "position" : "Systems Analyst",
+        "description" : "A systems analyst reviews design components and uses their knowledge of information technology to solve business problems. They identify ways that infrastructure needs to change to streamline business and IT operations. They can also assist technicians in training staff to implement the changes they propose.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/ms.svg",
+        "address" : "Singapore",
+        "category" : "IT"
+      },
+      {
+        "position" : "Database Administrator",
+        "description" : "Database administrators employ specialized software to organize and keep track of data. The software can be associated with software configuration, security and performance when applicable. These professionals frequently diagnose and solve complex IT issues related to the data infrastructure to ensure an organization's data is safe, accessible and easy to navigate.",
+        "salary" : "0",
+        "type" : "Part-Time",
+        "img" : "assets/images/company/ora.svg",
+        "address" : "1023 New York City",
+        "category" : "IT"
+      },
+      {
+        "position" : "Network Engineer",
+        "description" : "Network engineers work on the day-to-day maintenance and development of a company's computer network, utilizing their skills to make the network available and efficient for all employees within an organization.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/ora.svg",
+        "address" : "France",
+        "category" : "IT"
+      },
+      {
+        "position" : "Software Engineer",
+        "description" : "Software engineers apply their knowledge of mathematics and computer science to create and improve new software. They may work on enterprise applications, operating systems and network control systems, which are all examples of software that can be used to help businesses scale their IT infrastructure.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/acce.svg",
+        "address" : "Israel",
+        "category" : "IT"
+      },
+      {
+        "position" : "Data Scientist",
+        "description" : "A data scientist analyzes and organizes data to determine trends that can influence business decisions. Their methods and IT tools use statistics and machine learning to help collect and process a company's data such as financial records, sales, prospects and lead generation. Some duties vary for specific industries. For example, data scientists in the healthcare industry keep electronic health records (EHRs) intact for hospitals to have access to confidential medical information. They may also use data to help healthcare organizations make sound business decisions.",
+        "salary" : "0",
+        "type" : "Part-Time",
+        "img" : "assets/images/company/sap.svg",
+        "address" : "Netherlands",
+        "category" : "IT"
+      },
+      {
+        "position" : "IT Technician",
+        "description" : "An IT technician collaborates with support specialists to analyze and diagnose computer issues. They also monitor processing functions, install relevant software and perform tests on computer equipment and applications when necessary. They may also train a company's employees, clients and other users on a new program or function as well.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/acce.svg",
+        "address" : "United Kingdom",
+        "category" : "IT"
+      },
+      {
+        "position" : "Support Specialist",
+        "description" : "Support specialists are responsible for reviewing and solving computer network and hardware problems for a business. They can work in a variety of industries to provide general support to a company's employees or at a technology or software-as-a-service (SaaS) company to provide technical support on user experience issues that require technical assistance.",
+        "salary" : "0",
+        "type" : "Part-Time",
+        "img" : "assets/images/company/acce.svg",
+        "address" : "1023 New York City",
+        "category" : "IT"
+      },
+      {
+        "position" : "Cloud System Engineer",
+        "description" : "A cloud system engineer estimates the amount of database storage a company has and measures the availability of programs for the user. They also evaluate if data is being processed correctly within an organization's cloud infrastructure.",
+        "salary" : "0",
+        "type" : "Full-Time",
+        "img" : "assets/images/company/ora.svg",
+        "address" : "Sweden",
+        "category" : "IT"
+      },
+      {
+        "position" : "Applications Engineer",
+        "description" : "An application engineer is a liaison between engineers and customers. They review customer sales data and assist in producing and testing complex software programs. They also present engineers' findings to the public to render feedback on changes that need to be made.",
+        "salary" : "0",
+        "type" : "Part-Time",
+        "img" : "assets/images/company/acce.svg",
+        "address" : "Brazil",
+        "category" : "IT"
+      }
+    ]
+  }

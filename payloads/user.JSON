@@ -1,0 +1,25 @@
+{
+    "users": [
+      {
+        "firstname" : "John",
+        "lastname" : "Doe",
+        "email" : "john@example.com",
+        "password" : "john123",
+        "img" : "assets/images/johnDoe.jpg"
+      },
+      {
+        "firstname" : "Jane",
+        "lastname" : "Doe",
+        "email" : "jane@example.com",
+        "password" : "jane123",
+        "img" : "assets/images/janeDoe.jpg"
+      },
+      {
+        "firstname" : "Bob",
+        "lastname" : "Doe",
+        "email" : "bob@example.com",
+        "password" : "bob123",
+        "img" : "assets/images/bobDoe.jpg"
+      }
+    ]
+  }

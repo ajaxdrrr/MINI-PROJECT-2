@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brand {
+
+    max-width: 180px;
+    min-width: 120px;
+
+}
+
+.text-career {
+
+    color: #26A33B;
+
+}
+
+.btm-link:hover {
+
+    text-decoration: none;
+    color: #26A33B !important;
+
+}
+
+.btm-link {
+
+    text-decoration: none;
+    color: #444 !important;
+
+}
+
+.aa {
+
+    color: #26A33B;
+}
+
+.bi-twitter:hover {
+    color: #1DA1F2 ;
+    font-size: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.bi-twitter {
+    color: #444 ;
+    transition: all .5s ease-in-out;
+}
+
+.bi-facebook:hover {
+    color: #4267B2 ;
+    font-size: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.bi-facebook {
+    color: #444 ;
+    transition: all .5s ease-in-out;
+}
+.bi-linkedin:hover {
+    color: #0077B5 ;
+    font-size: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.bi-linkedin {
+    color: #444 ;
+    transition: all .5s ease-in-out;
+}
+
+.bi-instagram:hover {
+    color: #E1306C ;
+    font-size: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.bi-instagram {
+    color: #444 ;
+    transition: all .5s ease-in-out;
+}
+
+.top-items:hover {
+
+    color: #26A33B !important;
+    transition: all .5s ease-in-out !important;
+
+}
+
+.nav-link {
+
+    color: #444 !important;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    position: relative;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  nav li a:hover:before,
+  nav li a:hover:after {
+    width: 50%;
+  }
+  
+  nav li a:before,
+  nav li a:after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    height: 2px;
+    width: 0;
+    background-color: #26A33B;
+    transition: width 0.3s ease;
+  }
+  
+  nav li a:before {
+    left: 50%;
+  }
+
+  .bg-mask {
+
+    background-color: #9e0000f8;
+    z-index: -1;
+    position: relative;
+
+  }
+
+  .company-size {
+
+    width: 5% !important;
+    min-width: 120px !important;
+    margin: 2rem;
+
+}
+  
+  nav li a:after {
+    right: 50%;
+  }
+
+  .active {
+
+    color: #26A33B !important;
+
+  }
+
+  .card-img-top {
+    display: block;
+    margin: auto auto;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+  }
+
+  .zz {
+
+    box-shadow:
+  1.1px 1.1px 2.2px rgba(0, 0, 0, 0.011),
+  2.7px 2.7px 5.3px rgba(0, 0, 0, 0.016),
+  5.1px 5.1px 10px rgba(0, 0, 0, 0.02),
+  9.2px 9.2px 17.9px rgba(0, 0, 0, 0.024),
+  17.1px 17.1px 33.4px rgba(0, 0, 0, 0.029),
+  41px 41px 80px rgba(0, 0, 0, 0.04)
+;
+
+  }
+
+  .xx:hover {
+
+    box-shadow:
+  1.1px 1.1px 2.2px rgba(0, 0, 0, 0.011),
+  2.7px 2.7px 5.3px rgba(0, 0, 0, 0.016),
+  5.1px 5.1px 10px rgba(0, 0, 0, 0.02),
+  9.2px 9.2px 17.9px rgba(0, 0, 0, 0.024),
+  17.1px 17.1px 33.4px rgba(0, 0, 0, 0.029),
+  41px 41px 80px rgba(0, 0, 0, 0.04)
+;
+
+  }
+
+  #hero {
+
+    background-image: url(../images/header-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .landing-hero {
+
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 40rem;
+    max-width: 100%;
+
+  }
+
+  .landing-second-hero {
+
+    background-image: url(../images/hero-second-landing.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    max-width: 100%;
+    background-attachment: fixed;
+
+  }
+
+  .landing-third-hero {
+
+    background-image: url(../images/hero-third-landing.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    max-width: 100%;
+    background-attachment: fixed;
+
+  }
+
+  #hero2 {
+
+    background-image: url(../images/contact_breadcrumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .header-text {
+
+    color: white;
+
+  }
+
+  .sub-text {
+
+    font-size: 1.1rem;
+
+  }
+
+  .main {
+
+    background-color: #26a33ba6;
+    z-index: 0;
+
+  }
+
+  .card-text {
+
+    font-size: .9rem !important;
+
+  }
+
+  .card {
+
+    border-radius: 15px !important;
+
+  }
+
+  .border {
+
+    border-radius: 15px;
+
+  }
+
+  .signupmodal {
+
+    text-decoration: none;
+    color: #1f692b;
+
+  }
+
+  .signupmodal:hover {
+
+    text-decoration: none;
+    color: #26A33B;
+
+  }
+
+  #register {
+
+    cursor: pointer;
+
+  }
+
+  /* modal start */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 500px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s; 
+  }
+  
+  .modal.show {
+    display: block;
+  }
+  
+  .modal.show .modal-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .close {
+
+    cursor: pointer;
+
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .modal.show .modal-content {
+    animation: fadeInUp 0.5s forwards;
+  }
+
+  .success {
+
+    color: #aa3939;
+    font-size: 14px;
+
+}
+
+.error {
+
+    color: #aa3939;
+    font-size: 14px;
+
+}
+
+  /* modal end */
+
+  .btn-success:hover {
+
+    background-color: transparent;
+    border: 1px solid #26A33B;
+    color: #26A33B;
+
+  }
+
+  #loginShow, #registerShow {
+
+    cursor: pointer;
+
+  }
+
+  .userz {
+
+    width: 45px !important;
+    height: 45px !important;
+
+  }
+
+  /* drop down */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropz {
+
+    width: 15rem;
+    border-radius: 7px;
+
+  }
+
+  #logoutz:hover {
+
+    color: white !important;
+
+  }
+  
+  /* drop down end */
+  

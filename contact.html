@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bdf11bb7b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="assets/javascript/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>CareerHub | Contact</title>
+</head>
+<body>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="brand" src="./assets/images/brand.png" alt="Your Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  text-center">
+                    <a class="nav-link top-items" href="jobs.html">Find job</a>
+                </li>
+                <li class="nav-item active text-center">
+                    <a class="nav-link top-items" href="about.html">About</a>
+                </li>
+                <li class="nav-item  text-center">
+                    <a class="nav-link top-items" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item text-center zx d-none" id="show">
+                    <div class="dropdown row ml-1">
+                        <img class="card-img-top rounded-circle img-fluid bg-success userz ml-1" role="button" id="accountDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="assets/images/team-photo3 edited size.png" alt="Developer Image">
+                        <span class="text-inline m-auto"><strong class="ml-2" id="userlogged"></strong></span>
+                        <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <h6 class="dropdown-header">My Profile</h6>
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header">Account</h6>
+                            <a class="dropdown-item" href="#" id="logoutz">Logout</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item text-center" id="begone">
+                    <!-- <a class="nav-link top-items" id="register">Signup</a> -->
+                    <button type="button" class="btn btn-success" id="register-btn">
+                        Register
+                      </button>
+                </li>
+                <li class="nav-item text-center" id="begone">
+                    <!-- <a class="nav-link top-items" id="login">Signin</a> -->
+                    <button class="btn btn-outline-success m-2" id="login-btn">Sign In</button>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- modal login start -->
+    <div id="login-modal" class="modal card">
+        <div class="modal-content text-center card">
+            <span class="close text-right">&times;</span>
+            <div class="col-lg-12">
+            <img class="brand mb-3" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-lg-12">
+            <p>Login to your CareerHub account</p>
+            </div>
+            <div class="col-lg-12 mb-2">
+            <span id="msg" class="success"></span>
+            </div>
+            <form method="#" action="#">
+
+            <div class="col-lg-12 mb-3">
+                <input type="text" class="form form-control" id="useremail" name="username" placeholder="Email Address">
+            </div>
+            <div class="col-lg-12 mb-3">
+                <input type="password" class="form form-control" id="userpass" name="password" placeholder="Password">
+            </div>
+            <div class="col-lg-12 mb-2 text-left">
+                <input type="checkbox" class="" id="reme" name="reme" value="Remember me">
+                <label for="reme">Remember me</label>
+            </div>
+            <div class="col-lg-12 mb-2">
+                <button id="login" class="btn btn-success w-100" >Login</button>
+            </div>
+            <div class="col-lg-12">
+                <p>Don't have an account yet? <a class="signupmodal" id="registerShow">Sign Up</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- modal login end -->
+
+    <!-- modal login start -->
+    <div id="logout-modal" class="modal card">
+        <div class="modal-content text-center card">
+            <span class="close text-right">&times;</span>
+            <div class="col-lg-12">
+            <img class="brand mb-3" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-lg-12">
+            <p>Logout successfully.</p>
+            </div>
+            <div class="col-lg-12 mb-2">
+            <span id="msg" class="success"></span>
+            </div>
+            
+        </div>
+    </div>
+    <!-- modal login end -->
+
+    <!-- modal register start -->
+
+    <div id="register-modal" class="modal card">
+        <div class="modal-content text-center card">
+            <span class="close text-right">&times;</span>
+            <div class="col-lg-12">
+            <img class="brand mb-3" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-lg-12">
+            <p>Create CareerHub account</p>
+            </div>
+            <div class="col-lg-12 mb-2">
+                <span id="msg2" class="success"></span>
+                </div>
+            <form method="#" action="#">
+
+                <div class="col-lg-12 mb-3">
+                    <input type="text" class="form form-control" id="firstname" name="firstname" placeholder="First Name">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="text" class="form form-control" id="lastname" name="lastname" placeholder="Last Name">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="text" class="form form-control" id="remail" name="username" placeholder="Email Address">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="password" class="form form-control" id="rpass" name="password" placeholder="Password">
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <input type="password" class="form form-control" id="confirmpass" name="password" placeholder="Confirm Password">
+                </div>
+                <div class="col-lg-12 mb-2">
+                    <button id="create" class="btn btn-success w-100" >Create Account</button>
+                </div>
+                <div class="col-lg-12">
+                    <p>Registered already? <a class="signupmodal" id="loginShow">Sign In</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- modal register end -->
+    
+    <!-- Start of page hero -->
+    <section id="hero">
+        <div class="container-fluid main p-5">
+            <div class="container sub">
+
+                <h1 class="section-header header-text text-center">Contact Us</h1>
+                <p class=" header-text text-center sub-text">Get in Touch with Our Team Today </p>
+    
+            </div>
+        </div>
+    </section>
+    <!-- End of page hero -->
+    <!-- contact start -->
+    <section id="contact-us">
+        <div class="container p-5">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <h2><i class="bi bi-telephone-fill aa mx-1 mr-2"></i>Get in Touch</h2>
+                <hr>
+                <p>Our team is online 24/7 to make sure that you are happy with the service that we render. If you want to reach our team just email us at CareerHub2023@gmail.com or call our Hotline (555) 969-1432.  </p>
+                <br>
+                <h2><i class="bi bi-geo-alt-fill mx-1 aa mr-2"></i>We're Here</h2>
+                <hr>
+                <p> <br>If you experience problems in any aspect of your log-in session, <br>please do not hesitate to message us. <br>We would love to hear from you anytime of the day.</p>
+                <br>
+                <h2><i class="bi bi-people-fill mx-1 aa mr-2"></i>Follow Us</h2>
+                <hr>
+                <p class="socials">
+                    <a href="#"><i class="bi bi-twitter mx-1"></i></a>
+                    <a href="#"><i class="bi bi-facebook mx-1"></i></a>
+                    <a href="#"><i class="bi bi-linkedin mx-1"></i></a>
+                    <a href="#"><i class="bi bi-instagram mx-1"></i></a>
+  
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
+                <img src="assets/images/contact us image.jpg" alt="contact" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Contact Section -->
+
+      <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter section-padding p-5 bg-light">
+        <div class="container">
+          <form action="" class="m-auto">
+            <div class="row">
+              <div class="col-md-12 text-center p-5">
+                  <h1>Subscribe to <span class="text-career">Our</span> Newsletter!</h1>
+                  <p>To keep track of latest updates and news about our website, please subscribe to our newsletter.</p>
+              </div>
+              <div class="col-md-6 col-lg-6 input-group mb-3 container-fluid">
+                <input type="email" class="form-control" placeholder="Email address" aria-label="Enter email address" aria-describedby="newsletter-btn">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-success" type="button" id="newsletter-btn">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+    </section>
+    <!-- End of Newsletter -->
+
+    <!-- Queries Section -->
+    <section id="queries" class="queries section-padding">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center p-5">
+                  <h1>Got Queries? Message <span class="text-success">Us!</span></h1>
+                  <p>As professionals, we are eager to work with you. We value your passion and integrity to your craft.</p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12 ps-lg-5 mt-md-5 ">
+                  <img src="assets/images/shake hands.jpg" alt="shake" class="img-fluid margs">
+              </div>
+              <div class="col-lg-6 col-md-12 col-12">
+                  <form action="#" class=" p-4 m-auto">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="mb-3">
+                                  <input type="text" class="form-control" required placeholder="Your Name Here">
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" required placeholder="Your Email Here">
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="mb-3">
+                                <textarea required class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center mb-3">
+                            <p class="hidden"><input type="checkbox"> By clicking Subscribe you are aware of and agree to the user rights in the processing of personal data as outlined in the <b class="text-primary">Privacy Policy</b> and <b class="text-primary">Term of Use</b> of Cheaptalks.</p>
+                          </div>
+                          <div class="col-md-12 text-center mb-3">
+                            <button class="btn btn-success w-100 btn-md mt-2">Send</button>
+                          </div>
+                      </div>
+                    </form>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Queries -->
+    <!-- footer start -->
+    <footer class="bg-light py-3 text-center text-md-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <img class="brand" src="./assets/images/brand.png" alt="Your Logo">
+            </div>
+            <div class="col-md-6 text-md-right">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="btm-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="btm-link">Terms &amp; Conditions</a></li>
+                <li class="list-inline-item"><a href="#" class="btm-link">Cookie Policy</a></li>
+              </ul>
+              <p class="mb-0">&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+</body>
+</html>
