@@ -493,8 +493,6 @@ function createJobCards() {
 
     fetch('../../payloads/jobs.JSON').then(response => response.json()).then(data => {
 
-
-        
         data.jobs.forEach(job => {
 
             let mainContainer = document.createElement('div');
