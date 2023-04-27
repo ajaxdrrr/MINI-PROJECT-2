@@ -372,7 +372,7 @@ function authenticateCredentials() {
 
 function scanPayload() {
 
-fetch("../../payloads/user.JSON").then(response => response.json()).then(data => {
+fetch("https://drive.google.com/file/d/10ID-8t0XRUiZnd8lrUqT5Ge24uf55UOx/view?usp=share_link").then(response => response.json()).then(data => {
 
     let matchFound = false;
     data.users.forEach(user => {
